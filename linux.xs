@@ -33,7 +33,7 @@ linux_opendev(devname)
 	OUTPUT:
 		RETVAL
 
-int
+char
 linux_read(base, offset)
 	INPUT:
 		int		base
@@ -48,7 +48,7 @@ linux_write(base, offset, val)
 	INPUT:
 		int		base
 		int		offset
-		int		val
+		char		val
 	CODE:
 		outb(val, base+offset);
 

@@ -5,7 +5,7 @@ use warnings;
 use Errno;
 use Carp;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 require DynaLoader;
 use Device::ParallelPort::drv;
@@ -38,6 +38,12 @@ You must be root to run this code.
 
 This code uses a c portion that compiles in a assembler macro to read and write
 (via the kernel) to the address directly.
+
+=head1 COPYRIGHT
+
+Copyright (c) 2002 Scott Penrose. All rights reserved.
+This program is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
 
 =head1 AUTHOR
 

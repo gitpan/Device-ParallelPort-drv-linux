@@ -6,4 +6,5 @@ Revision history for Perl extension Device::ParallelPort::drv::linux.
 0.02  Mon May  6 09:38:46 2002
 	- Fix missing header file and include License
 
-
+0.03  Thu May  9 20:43:38 EST 2002
+	- Wrong type needs to be char not int
