@@ -5,9 +5,8 @@ use warnings;
 use Errno;
 use Carp;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
-# require DynaLoader;
 require DynaLoader;
 use Device::ParallelPort::drv;
 our @ISA = qw(DynaLoader Device::ParallelPort::drv);
@@ -40,6 +39,14 @@ You must be root to run this code.
 This code uses a c portion that compiles in a assembler macro to read and write
 (via the kernel) to the address directly.
 
+=head1 AUTHOR
+
+Scott Penrose L<scottp@dd.com.au>, L<http://linux.dd.com.au/>
+
+=head1 SEE ALSO
+
+L<Device::ParallelPort>
+
 =cut
 
 sub INFO {
@@ -52,7 +59,6 @@ sub INFO {
 
 sub init {
 	my ($this, $str, @params) = @_;
-
 	$this->{DATA}{BASE} = linux_opendev($this->{DATA}{DEVICE});
 	unless ($this->{DATA}{BASE} > 1) {
 		croak "Failed to load partport driver for " . $this->{DATA}{DEVICE};

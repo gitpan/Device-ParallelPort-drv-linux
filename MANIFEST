@@ -1,7 +1,9 @@
 Changes
 linux.pm
 linux.xs
+linux.h
 Makefile.PL
 MANIFEST
 README
+LICENSE
 test.pl

@@ -1,6 +1,9 @@
 Revision history for Perl extension Device::ParallelPort::drv::linux.
 
 0.01  Fri May  3 09:38:46 2002
-	- original version; created by h2xs 1.21 with options
-		-n Device::ParallelPort::drv::linux linux.h
+	- First alpha release
+
+0.02  Mon May  6 09:38:46 2002
+	- Fix missing header file and include License
+
 
